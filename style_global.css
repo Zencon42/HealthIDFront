@@ -3,8 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 390px;
 }
-
 /* Estilos do cabeçalho */
 header {
     display: flex;
@@ -67,50 +67,62 @@ main {
     text-align: center;
 }
 
-.notifications,
 .actions{
-    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.notifications{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    width: 100%;
     
 }
 
 .h2-notifications{
-    width: 338px;
+    width: 70%;
     height: 40px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #D9D9D9;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Espaçamento igual entre o texto e a imagem */
+    padding: 0 15px;
 }
 
 .h2-notification img {
-     width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 30px; /* Tamanho da imagem */
+    height: 30px; /* Tamanho da imagem */
 }
 
 .recent-access {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
     margin-bottom: 30px;
-    display:flex;
-    align-items: column;
+    align-items: center;
 }
 
 .h2-recent-access{
-
-    width: 338px;
+    width: 70%;
     height: 40px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #D9D9D9;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; /* Espaçamento igual entre o texto e a imagem */
+    padding: 0 15px;
 }
 
 .h2-recent-access img {
-     width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+     width: 50%; /* Ajuste o tamanho da imagem conforme necessário */ /* Ajuste o tamanho da imagem conforme necessário */
 }
 h2 {
     font-size: 14px;
@@ -126,12 +138,32 @@ li {
 }
 
 /* Estilos dos botões de ação */
-.action-button {
+/*.action-button {
     background-color: lightblue;
     border: none;
     padding: 10px 20px;
     margin: 0 10px;
     cursor: pointer;
+}*/
+
+.action-button {
+    text-align: center;
+    flex: 1; /* Faz os botões ocuparem o mesmo espaço */
+    margin: 0 5px; /* Espaço entre os botões */
+    padding: 10px; /* Espaço interno dos botões */
+}
+
+.action-button img {
+    width: 50px; /* Tamanho da imagem */
+    height: 50px; /* Tamanho da imagem */
+    display: block; /* Para centralizar a imagem horizontalmente */
+    margin: 0 auto; /* Para centralizar a imagem horizontalmente */
+}
+
+.action-button span {
+    display: block;
+    margin-top: 5px; /* Espaço entre a imagem e o texto */
+    font-size: 14px;
 }
 
 /* Estilos dos botões fixos no rodapé */
@@ -144,6 +176,7 @@ footer {
     justify-content: space-around;
     padding: 10px;
     background-color: lightblue;
+    width: 390px;
 }
 
 .footer-button {
